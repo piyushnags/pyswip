@@ -596,7 +596,7 @@ try:
     if _lib.PL_version_info != None:
         PL_version = _lib.PL_version_info # swi-prolog > 8.5.2
     else:
-        PL_version = _lib.PL_version # swi-prolog <= 8.5.2
+        PL_version = _lib.PL_version_info # swi-prolog <= 8.5.2
     PL_version.argtypes = [c_int]
     PL_version.restype = c_uint
 
